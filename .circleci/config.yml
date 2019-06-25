@@ -9,14 +9,14 @@ jobs:
       # This is Android review pull request box (Not necessary to change)
       ROOM_ID: "92773689"
       # Insert the chatwork accounts which you want to mention when the pull request was verified
-      MEMBERS: "[To:3827619]"
+      MEMBERS: "[To:3827619] Le Son"
     steps:
       - checkout
       - restore_cache:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-      - run:
-          name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
-          command: sudo chmod +x ./gradlew
+      #      - run:
+      #         name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
+      #         command: sudo chmod +x ./gradlew
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
@@ -27,7 +27,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test
-      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
+      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: app/build/reports
           destination: reports
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
@@ -46,7 +46,6 @@ jobs:
                 "\
                 "https://api.chatwork.com/v2/rooms/$ROOM_ID/messages"
             fi
-
       - run:
           name: Sending notification on success
           when: on_success
