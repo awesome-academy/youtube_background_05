@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="logo_width">120dp</dimen>
-    <dimen name="rcv_item_height">100dp</dimen>
-    <dimen name="nav_height">48dp</dimen>
-    <dimen name="search_box_height">36dp</dimen>
-    <dimen name="nav_padding_icon">14dp</dimen>
-    <dimen name="padding_10">10dp</dimen>
-    <dimen name="margin_6">6dp</dimen>
-
-    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
 </resources>

@@ -1,4 +1,4 @@
-package com.sun_asterisk.youtube_background_05.screen.home;
+package com.sun_asterisk.youtube_background_05.screen.search;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,13 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.sun_asterisk.youtube_background_05.R;
 
-public class HomeFragment extends Fragment {
-
+public class SearchFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
-
+        return inflater.inflate(R.layout.fragment_search, container, false);
     }
 }

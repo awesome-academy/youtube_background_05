@@ -2,26 +2,64 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <include
-        layout="@layout/navigation_header_layout"
-        android:id="@+id/nav_include"
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        >
+
+        <ImageView
+            android:id="@+id/image_icon_back"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:padding="@dimen/dp_14"
+            android:src="@drawable/ic_back"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_48"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/image_icon_search"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:padding="@dimen/dp_14"
+            android:src="@drawable/ic_search"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            />
+    </android.support.constraint.ConstraintLayout>
 
     <FrameLayout
-        android:id="@+id/frame_main"
+        android:id="@+id/frameMain"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#fff"
+        android:background="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nav_include"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         />
 </android.support.constraint.ConstraintLayout>
