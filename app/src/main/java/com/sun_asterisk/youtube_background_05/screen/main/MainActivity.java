@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        mImageIconSearch = findViewById(R.id.image_icon_search);
-        mImageIconBack = findViewById(R.id.image_icon_back);
-        mImageLogo = findViewById(R.id.image_logo);
+        mImageIconSearch = findViewById(R.id.imageIconSearch);
+        mImageIconBack = findViewById(R.id.imageIconBack);
+        mImageLogo = findViewById(R.id.imageLogo);
         mImageIconSearch.setOnClickListener(this);
         mImageIconBack.setOnClickListener(this);
         setNewPage(new HomeFragment());
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.frameMain, fragment, "mainFragment");
+            transaction.replace(R.id.frameMain, fragment, fragment.getClass().getName());
             transaction.commitAllowingStateLoss();
             if (mFragment != null) transaction.remove(mFragment);
             mFragment = fragment;
@@ -68,13 +68,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.image_icon_search:
+            case R.id.imageIconSearch:
                 mImageIconSearch.setVisibility(View.GONE);
                 mImageLogo.setVisibility(View.GONE);
                 mImageIconBack.setVisibility(View.VISIBLE);
                 addFragment(new SearchFragment());
                 break;
-            case R.id.image_icon_back:
+            case R.id.imageIconBack:
                 mImageIconBack.setVisibility(View.GONE);
                 mImageLogo.setVisibility(View.VISIBLE);
                 mImageIconSearch.setVisibility(View.VISIBLE);

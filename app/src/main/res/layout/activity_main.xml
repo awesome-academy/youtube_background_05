@@ -18,7 +18,7 @@
         >
 
         <ImageView
-            android:id="@+id/image_icon_back"
+            android:id="@+id/imageIconBack"
             android:layout_width="@dimen/dp_48"
             android:layout_height="@dimen/dp_48"
             android:padding="@dimen/dp_14"
@@ -30,7 +30,7 @@
             />
 
         <ImageView
-            android:id="@+id/image_logo"
+            android:id="@+id/imageLogo"
             android:layout_width="@dimen/dp_120"
             android:layout_height="@dimen/dp_48"
             android:paddingLeft="@dimen/dp_10"
@@ -42,7 +42,7 @@
             />
 
         <ImageView
-            android:id="@+id/image_icon_search"
+            android:id="@+id/imageIconSearch"
             android:layout_width="@dimen/dp_48"
             android:layout_height="@dimen/dp_48"
             android:padding="@dimen/dp_14"
