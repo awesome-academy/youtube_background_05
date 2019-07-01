@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import com.sun_asterisk.youtube_background_05.R;
 
 public class HomeFragment extends Fragment {
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,

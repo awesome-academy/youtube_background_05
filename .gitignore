@@ -63,3 +63,6 @@ fastlane/readme.md
 captures/
 
 /app/src/androidTest/java/com/sun_asterisk/youtube_background_05/ExampleInstrumentedTest.java
+app/libs/
+app/src/main/java/com/sun_asterisk/youtube_background_05/screen/main/adapter/
+app/src/main/java/com/sun_asterisk/youtube_background_05/service/
